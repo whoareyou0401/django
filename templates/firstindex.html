@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+    <a href="{% url 'day04:langs' %}">查看所有语言</a>
+    <a href="https://www.baidu.com/">百度一下</a>
+        <a href="{% url 'day04:myindex_with_params_v1' p1=1 %}">查看语言V1</a>
+
+    <a href="{% url 'day04:myindex_with_params' 2 %}">查看语言</a>
+
+    {{ 3|add:5 }}
+
+
+
+</body>
+</html>

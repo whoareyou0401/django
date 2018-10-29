@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>分类</title>
+</head>
+<body>
+    <ul>
+        {% for datum in data %}
+{#            拼接路径#}
+            <li><a href="/day02/get_item_by_cate_id?c_id={{ datum.id }}">{{ datum.cate_name}}</a></li>
+        {% endfor %}
+
+    </ul>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mybook</title>
+</head>
+<body>
+
+你喜欢的书是{{ book_name }} 封面是 <img src="{{ icon }}" alt="">
+
+<form action="{% url 'day06:create_book_v1' %}" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="text" name="name" placeholder="书名">
+    <br>
+    <input type="file" name="icon">
+    <br>
+    <input type="submit" value="提交">
+
+
+
+</form>
+
+</body>
+</html>
